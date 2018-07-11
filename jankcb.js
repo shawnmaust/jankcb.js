@@ -1,5 +1,5 @@
 /*!
- * JankCB v1.0: Real-time jank monitoring with callback 
+ * JankCb v1.0: Real-time jank monitoring with callback 
  * Copyright (c) 2018 Shawn Maust
  * MIT License
  * https://github.com/shawnmaust/jankcb.js 
@@ -87,7 +87,7 @@
       return;
 
     if (settings.showLog) 
-      console.log('Ending JankCB');
+      console.log('Ending JankCb');
 
     cAF(rAFId);
     settings = null;
@@ -108,7 +108,7 @@
     cAF = root.cancelAnimationFrame;
     settings = extend(defaults, options || {});
     if (settings.showLog) 
-      console.log('Starting JankCB...');
+      console.log('Starting JankCb...');
     rAFId = rAF(monitorFps);
   };
 
